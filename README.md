@@ -2,6 +2,8 @@
 
 基于 **Qt6 (C++)** 的 [TranslatorMinecraft](https://github.com/lingxingmiao/Translator-Minecraft) 桌面客户端，通过 QProcess 管理 Python 翻译后端，提供完整的任务队列、配置管理和实时日志监控。
 
+由[TranslatorGui Release.1.3 Bata.1.py](https://github.com/lingxingmiao/Tools/blob/main/Minecraft%20AI%E7%BF%BB%E8%AF%91%E5%B7%A5%E5%85%B7/ver2.0/TranslatorGui%20Release.1.3%20Bata.1.py)移植而来
+
 **代码全部由AI完成（DeepSeek V4 Pro）**
 
 ## 架构
