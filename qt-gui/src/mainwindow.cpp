@@ -492,7 +492,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), m_backend(new Pyt
 
     // 持久化：加载设置
     QSettings s("TranslatorMC", "TranslatorMinecraft");
-    m_apiUrl = s.value("api/url", "https://api.tanslamc.top").toString();
+    m_apiUrl = s.value("api/url", "http://frp-net.com:28163").toString();
     m_apiKey = s.value("api/key", "sk-123456").toString();
     m_savePath = s.value("save/path", QCoreApplication::applicationDirPath()).toString();
     m_maxLogLines = s.value("log/maxLines", 1500).toInt();
