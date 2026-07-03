@@ -523,7 +523,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), m_backend(new Pyt
         }
         refreshTaskList();
     }
-    m_backend->setApiConfig(m_apiUrl,m_apiKey); m_backend->startServer(25561);
+    m_backend->setApiConfig(m_apiUrl,m_apiKey);
 }
 MainWindow::~MainWindow(){
     // 持久化：保存设置

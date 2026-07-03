@@ -108,7 +108,7 @@ bool PythonBackend::isRunning() const
 
 QString PythonBackend::apiBaseUrl() const
 {
-    return QString("http://127.0.0.1:%1").arg(m_port);
+    return m_apiUrl;
 }
 
 void PythonBackend::setApiConfig(const QString &apiUrl, const QString &apiKey)
