@@ -374,6 +374,7 @@ void PythonBackend::doUploadAndSubmit(const QString &typeName, const QString &en
 
     QNetworkRequest request(QUrl(apiBaseUrl() + endpoint));
     request.setRawHeader("Authorization", "Bearer " + m_apiKey.toUtf8());
+    request.setTransferTimeout(15000); // 15秒超时
 
     QNetworkReply *reply = m_network->post(request, multiPart);
     multiPart->setParent(reply);
